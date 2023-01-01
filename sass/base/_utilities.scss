@@ -1,0 +1,7 @@
+.container{
+    width:75% ;
+
+    @include respond(phone){
+        width:85%;
+    }
+}

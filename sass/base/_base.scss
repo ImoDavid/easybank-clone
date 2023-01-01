@@ -1,0 +1,20 @@
+*,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; }
+  
+  html {
+    font-size: 62.5%;
+    @include respond(phone){
+      font-size:50%;
+    }
+  }
+  
+  body {
+    font-family: "Public Sans", sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    box-sizing: border-box; }
+

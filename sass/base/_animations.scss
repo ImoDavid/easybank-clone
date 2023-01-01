@@ -1,0 +1,26 @@
+@keyframes slideIn {
+    0% {
+      -webkit-transform: translatex(-50rem);
+      transform: translatex(-50rem);
+    }
+
+    100% {
+      -webkit-transform: translatex(0rem);
+      transform: translatex(0rem);
+
+    }
+  }
+
+
+@keyframes loadcontent {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+

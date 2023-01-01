@@ -1,0 +1,87 @@
+.hero{
+    background-color:$color-light-grey;
+    min-height: 70vh;
+    
+ 
+    &-content{
+        margin-left: 15rem;
+        padding: 1rem 3rem 1rem 0;
+        text-align: left;
+
+        @include respond(phone){
+            margin-left: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        & h1{
+            font-size: 4rem;
+            font-weight: 300;
+            padding-right: 1rem;
+        }
+       
+     & p{
+            margin: 1.5rem 0;
+            padding: 0 6rem 0 0;
+            @include respond(phone){
+                margin: 2rem 0;
+                padding: 1rem 0;
+            }
+        }
+    }
+    
+    &-left{
+        height: 70vh;
+        padding: 15rem 5rem;
+
+        @include respond(phone){
+            order: 2;
+            height:65vh;
+            padding: 20rem 5rem 25rem 5rem;
+            
+        }
+    }
+    
+    &-right{
+        height: 70vh;
+        background-image: url(/images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position:left center;
+        background-size:auto;
+        position:relative;
+
+        @include respond(phone){
+            height: 30vh;
+            background-image: url(/images/bg-intro-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        & img {
+            position: absolute;
+            top:-3rem;
+            right: -8rem;
+            z-index: 1;
+            width:90%;
+        @include respond(phone){
+            top:-8rem;
+            right: 7%;
+            
+        }
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
